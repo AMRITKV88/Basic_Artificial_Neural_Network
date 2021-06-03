@@ -107,19 +107,19 @@ final_comparison = np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape
 
 
 # %%
-print(final_comparison)
+# print(final_comparison)
 
 
 # %%
 # building Confusion Matrix
 from sklearn.metrics import confusion_matrix, accuracy_score
 conf_mtx = confusion_matrix(y_test, y_pred)
-print(conf_mtx)
-print(accuracy_score(y_test, y_pred))
+# print(conf_mtx)
+print("\n\nTesting Accuracy : ",accuracy_score(y_test, y_pred)*100,"%", "\n\n")
 
 
 # %%
 # Testing using a user provided new pattern
-print(classifier.predict(sc.transform([[1, 0, 0, 600, 1, 40, 3, 60000, 2, 1, 1, 50000]])))
+# print(classifier.predict(sc.transform([[1, 0, 0, 600, 1, 40, 3, 60000, 2, 1, 1, 50000]])))
 
 
