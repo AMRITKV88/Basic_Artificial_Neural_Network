@@ -1,5 +1,0 @@
-keras
-sklearn
-numpy
-pandas
-
